@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaNetwork SMP | Store</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo-container">
+            <img src="/assets/images/logo.png" alt="Logo">
+            NovaNetwork
+        </a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/rules">Rules</a>
+            <a href="/store" style="color: #FFD700;">Store</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="panel" style="text-align: center;">
+            <h2 style="color: #FFD700;">Server Store (GCash Only)</h2>
+            <p>Support the server to keep it running and receive awesome in-game perks!</p>
+        </div>
+
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div class="panel" style="flex: 1; min-width: 300px;">
+                <h2>Payment Instructions</h2>
+                <p>1. Open your GCash App.</p>
+                <p>2. Send the exact amount to: <strong>0912 345 6789</strong> (Account: NovaNetAdmin).</p>
+                <p>3. Save the <strong>Reference Number</strong> from your receipt.</p>
+                <p>4. Fill out the form to claim your rank!</p>
+                <br>
+                <h3>Available Items:</h3>
+                <p>⭐ <strong>VIP Rank</strong> - ₱250.00</p>
+                <p>👑 <strong>MVP Rank</strong> - ₱500.00</p>
+            </div>
+
+            <div class="panel" style="flex: 1; min-width: 300px;">
+                <h2>Claim Purchase</h2>
+                <form id="store-form">
+                    <label>Minecraft Username:</label>
+                    <input type="text" id="ign" required placeholder="Notch">
+                    
+                    <label>Select Item:</label>
+                    <select id="item" required>
+                        <option value="VIP">VIP Rank (₱250)</option>
+                        <option value="MVP">MVP Rank (₱500)</option>
+                    </select>
+
+                    <label>GCash Reference No.:</label>
+                    <input type="text" id="ref" required placeholder="0000 000 000000">
+
+                    <button type="submit" id="purchase-btn" class="mc-button" style="width: 100%; background-color: var(--mc-grass);">Submit Payment</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer><p>&copy; 2024 NovaNetwork SMP.</p></footer>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
